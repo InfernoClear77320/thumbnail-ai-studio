@@ -1,29 +1,76 @@
-# Thumbnail AI Studio
+# 🖼️ Thumbnail AI Studio
 
-AI-помощник для создания идей YouTube-превью: концепции, текст на обложку, заголовки и промпты для генерации изображения.
+Turn a video idea into thumbnail concepts, overlay text, title ideas, and image-generation prompts.
 
-## Запуск
+## Download
 
-Нужны Python 3.10+ и API-ключ OpenAI.
+**Download the program as a ZIP file:** [Download Thumbnail AI Studio](./thumbnail-ai-studio.zip)
+
+The ZIP file is hosted in this GitHub repository. Replace `thumbnail-ai-studio.zip` in the link above with the exact filename of the ZIP you upload.
+
+## Features
+
+- Generate 1–5 distinct thumbnail concepts
+- Choose a platform, audience, language, and visual style
+- Get composition notes, overlay text, title ideas, and image prompts
+- Edit and download concepts as TXT or Markdown
+- Keep API keys out of source code
+
+> This app generates thumbnail concepts and prompts. It does not create the final image file itself.
+
+## Run locally
+
+Requirements: Python 3.10+ and an OpenAI API key.
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/YOUR-USERNAME/thumbnail-ai-studio.git
+cd thumbnail-ai-studio
+python -m venv .venv
+```
+
+Activate the environment, then install the dependencies:
+
+**Windows PowerShell**
+```powershell
+.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+**macOS / Linux**
+```bash
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+Copy `.env.example` to `.env` and add your API key:
+
+```env
+OPENAI_API_KEY=your_api_key_here
+OPENAI_MODEL=gpt-4.1-mini
+```
+
+Run the app:
+
+```bash
 streamlit run app.py
 ```
 
-Добавь `OPENAI_API_KEY` в `.env` или Streamlit Secrets.
+## Deploy
 
-## Скачать программу через ZIP
+1. Push this repository to GitHub.
+2. Deploy it through [Streamlit Community Cloud](https://share.streamlit.io/).
+3. Select `app.py`.
+4. Add `OPENAI_API_KEY` in Streamlit Secrets.
+5. Deploy the app.
 
-1. Загрузи ZIP-файл программы в этот GitHub-репозиторий.
-2. Скопируй ссылку на ZIP-файл.
-3. Укажи её в `PROGRAM_DOWNLOAD_URL` в `.env` или Streamlit Secrets.
+API usage may cost money.
 
-Кнопка скачивания в приложении будет вести на этот ZIP. Другие способы скачивания не предусмотрены.
+## Security
 
-## Важно
-
-Приложение создаёт идеи и промпты, но не генерирует готовое изображение. Для работы требуется API-ключ; использование API может быть платным.
+- Never commit `.env` or `.streamlit/secrets.toml`.
+- Never share API keys in public issues or screenshots.
+- User prompts are sent to the configured AI provider.
+- Do not enter confidential information.
 
 ## License
 
