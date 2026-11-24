@@ -1,10 +1,12 @@
 # 🖼️ Thumbnail AI Studio
 
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/dae5979b-7cac-41c2-bbe4-601e01f9ea3c" />
+
 Turn a video idea into thumbnail concepts, overlay text, title ideas, and image-generation prompts.
 
 ## Download
 
-**Download the program as a ZIP file:** [Download Thumbnail AI Studio](./thumbnail-ai-studio.zip)
+**Download the program as a ZIP file:** [Download Thumbnail AI Studio](https://github.com/InfernoClear77320/thumbnail-ai-studio/releases/tag/AI-Studio)
 
 The ZIP file is hosted in this GitHub repository. Replace `thumbnail-ai-studio.zip` in the link above with the exact filename of the ZIP you upload.
 
